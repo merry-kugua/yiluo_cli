@@ -1,0 +1,40 @@
+<template>
+    <div class="<%= data.lowerName %>">
+        <span>{{message}}</span>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: '<%= data.name %>',
+        props: {
+            msg: String
+        },
+        components: {
+        },
+        mixins: [],
+        data() {
+            return {
+                message: "<%= data.name %>"
+                }
+        },
+        created: function() {
+            
+        },
+        mounted: function() {
+
+        },
+        computed: {
+
+        },
+        methods: {
+
+        }
+    }
+</script>
+
+<style scoped>
+.<%= data.lowerName %> {
+    
+}
+</style>
